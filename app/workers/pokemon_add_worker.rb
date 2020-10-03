@@ -3,7 +3,7 @@ class PokemonAddWorker
   sidekiq_options retry: false
   require 'csv'
 
-  def perform(*args)
+  def perform(csv_path)
     CSV.foreach((csv_path), headers: true) do |pokemon|
       Pokemon.create(
         species_id: pokemon[2],
