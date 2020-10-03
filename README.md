@@ -1,4 +1,5 @@
-`redis-server /usr/local/etc/redis.conf`
-`bunde exec sidekiq`
+- `redis-server /usr/local/etc/redis.conf`
+- `bunde exec sidekiq`
 
-`rails s`
+- `rails s`
+
